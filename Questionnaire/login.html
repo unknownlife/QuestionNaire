@@ -1,0 +1,104 @@
+<html>
+<head>
+<title>	PROJECT 1</title>
+<link rel="stylesheet" type="text/css" href="dbms1.css">
+<link rel="stylesheet" href="C:\Users\Aditya Aggarwal\Desktop\DBMS Project 1\Bootstrap\bootstrap.css">
+<link rel="stylesheet" href="C:\Users\Aditya Aggarwal\Desktop\DBMS Project\Bootstrap\bootstrap.min.css">
+</head>
+<body background="Images\Quora   The best answer to any question.png"style="background-size:cover;">
+<div id="header"><h1 style="color:maroon;font-size:50px;text-align:center;margin-left:18%;font-family: 'Russo One', sans-serif;font-weight:bold;">QUESTIONNAIRE</h1></div>
+<div id="loginbox">
+    <div id="continue">
+	<h1 style="margin-top:13%;">The incredibly easy, completely free Q & A platform </h1>
+	</div>
+	<div id="login">
+    <form method="post" action="login3.php">
+    <span style="font-size:16px;font-weight:bold;">Login</span><br><input type="number" placeholder="Enrollment no." name="enroll" id="log"><br>
+    <input type="checkbox" value="a" name="r"><span style="color:grey;font-size:14px;"> Remember me</span><br>
+    <input type="password" placeholder="Password" name="pass" id="log"><br>
+   <input type="submit" style="margin-top:7px;margin-left:200px;background-color:lightblue;border-radius:10px" value="LOGIN"  name="loginsubmit">
+    </form>
+    <p style="color:grey;font-size:16px;line-height:20px;">You are now logged out of this browser,but you are still logged in with other browsers.<br><a href="#"style="color:grey;font-size:16px;">Logout of all browsers</a>	
+    </div>
+</div>
+</body>
+<!--?php
+$email1 = $pass1 = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  $email1 = $_POST["enroll"];
+  $pass1 = $_POST["pass"];
+}
+function test_input($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}
+
+$servername = "localhost";
+    $username = "root";
+    $ppp = "";
+
+  // Create connection
+    $conn = new mysql($servername, $username, $ppp);
+    // Check connection
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+   $sql="create database database1";
+   
+   if($conn->query($sql) === TRUE )
+   echo "database created successfully !";
+   else
+   echo "database not created successfully".$conn->error;
+  
+  
+    
+  $servername = "localhost";
+    $username = "root";
+    $ppp = "adi";
+	
+    $dbname = "login_database";
+    // Create connection
+    $conn = new mysql($servername, $username, $ppp, $dbname);
+    // Check connection
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+
+    
+    $sql = "SELECT enrollment_no, password FROM login1
+    where email_id='$email1' and password='$pass1'";
+    $result = $conn->query($sql);
+   
+    
+    if ($result->num_rows > 0)
+    {
+        while($row = $result->fetch_assoc())
+        
+            echo "EMAIL_ID : " . $row["email_id"]. "PASSWORD : " . $row["password"]. "<br>";
+            
+        
+    } else {
+        
+        $sql = "INSERT INTO dataB (name, password)
+        VALUES ('$email1', '$pass1')";
+        if ($conn->query($sql) === TRUE) {
+            echo "Sign Up Successfull !";
+        } else {
+            echo "Error: " . $sql . "<br>" . $conn->error;
+        }
+    }
+
+    $conn->close();
+
+    ?-->
+</html>
+
+
+
+
+
+
+

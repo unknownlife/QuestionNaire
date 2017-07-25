@@ -1,0 +1,175 @@
+.top_content
+{
+    background-image:url(../backgrounds/1.jpg);
+    background-attachment:fixed;
+    position:absolute;
+    background-size:cover;
+    margin-top:120px;
+    width:1330px;
+    height:550px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+}
+.top_bar
+{
+	background-color:#26969A;
+	position:absolute;
+	width:1330px;
+    height:120px;
+	background-size:cover;
+}
+.top_bar_text
+{
+	margin-top:40px;
+	font-size: 30px;
+	font-family: 'Lato', sans-serif;
+	color:black;
+	
+}
+.form-inline
+{
+	margin-top:40px;
+	margin-left:550px;
+	font-size:22px;
+	font-family: 'Lato', sans-serif;
+}
+
+.divider-2 span
+ {
+	display: block;
+	width: 300px;
+	height: 1px;
+	margin: 0 auto;
+	border-bottom: 1px solid #fff;
+	opacity: 0.5;
+ }
+.top-content-text p {
+	opacity: 0.9;
+	margin-top: 40px;
+    font-size: 30px;
+    line-height: 36px;
+    font-style: italic;
+}
+.container
+{
+	margin-left:0px;
+}
+
+.top-content-bottom-link {
+	padding-top: 30px;
+	padding-bottom: 7px;
+	font-size:40px;
+	text-align:center;
+}
+a:link,a:visited
+{
+	color:#fff;
+}
+a:hover
+{
+	color:#26969A;
+}
+.top-content-bottom-link .big-link-1 { background: none; border: 2px solid #888;border-radius:10px; }
+.navbar
+{
+	margin-top:70px;
+}
+.nav  
+{
+	margin-left:600px;
+}
+.default-background
+{
+	background-image:url(../backgrounds/4.jpg);
+	background-attachment:fixed;
+    position:absolute;
+    background-size:cover;
+    width:1330px;
+    height:500px;
+}
+.default1-background
+{
+	background-color:#26969A;
+}
+.timeline
+{
+	height:150px;
+	width:1000px;
+    float: left;
+	background-color:#333;
+	margin-top:0px;
+	border-style:solid;
+	border-width:1px;
+	border-color:black;
+}
+.hi
+ {
+	height:150px;
+    width:330px;
+    float: left;
+	background-color:#333;
+	margin-top:0px;
+    padding: 15px;
+    border: 1px solid black;
+}
+.frame
+{
+	margin:100px 300px 300px;
+	height:350px;
+	background-color:#fff;
+}
+.table
+{
+	height:350px;
+	width:700px;
+	margin-left:0px;
+}
+.box
+{
+	margin:40px 400px 400px;
+	height:460px;
+	background-color:#fff;
+}
+
+.hub_name
+{
+	height:200px;
+	width:1330px;
+    float: left;
+	margin-top:120px;
+	background-color:#B2DFDB;
+}
+.hub_pic
+{   
+    height:200px;
+    width:250px;
+    float: left;
+	margin-top:120px;
+}
+#nameofhub
+{
+	text-align:right;
+	margin-right:40px;
+	font-size:90px;
+	float:right;
+	margin-top:30px;
+	color:#fff;
+	font-family:"jonny pinhorn";
+}
+.back
+{
+	background-color:#26969A;
+	position:absolute;
+	width:1330px;
+	margin-top:320px;
+	height:1000px;
+}
+.about_hub
+{
+	margin-left:250px;
+	width:830px;
+	height:1000px;
+	background-color:white;
+}

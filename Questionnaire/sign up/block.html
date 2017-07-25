@@ -1,0 +1,111 @@
+<!--DESCRIPTION-->
+	    <div style='font-size:40px; color:black; margin-left:20px; font-family:cormorant garamond;'>About the Hub...<br></div>
+		<p id='hub_text' style='color:black; font-size:20px;'></p>
+		<div style='font-size:30px; color:black; margin-top:500px; margin-left:20px; font-family:cormorant garamond;'>Faculty Co-ordinator:<br></div>
+		<h2 id='faculty_name' style=' margin-left:20px; font-size:20px; color:black;'></h2>
+		<h2 id='faculty_phno' style=' margin-left:20px; font-size:20px; color:black;'></h2>
+		<h2 id='faculty_email' style=' margin-left:20px; font-size:20px; color:black;'></h2>
+		<div style='font-size:30px; color:black; margin-left:20px; font-family:cormorant garamond;'>Student Co-ordinators:<br></div>
+		<p><div id='stud1_name' style=' margin-left:20px; text-align:left; font-size:20px; color:black;'></div>
+		<div id='stud2_name' style='margin-right:20px;  text-align:right; font-size:20px; color:black;'></div></p><br>
+		<p><div id='stud1_phno' style=' margin-left:20px; text-align:left; font-size:20px; color:black;'></div>
+		<div id='stud2_phno' style='margin-right:20px; text-align:right; font-size:20px; color:black;'></div></p>
+	   </div>
+	   
+	   
+<!--UPDATE INFO-->
+        <div style='font-size:40px; color:black; margin-left:30px; font-family:cormorant garamond;'>Update info<br></div>
+		 <form name='myForm' action='" onsubmit=""  method="post" style="margin-top:70px; width:500px; margin-left:30px;">
+	      <div class="form-group">
+          <label for="new_name">Hub Name:</label>
+          <input name ="new_name" type="text" class="form-control" placeholder="Enter new name" required>
+          </div>
+	      <div class="form-group">
+          <label for="desc">Description:</label>
+		  <textarea name ="new_desc"  class="form-control" placeholder="Enter description"></textarea>
+		  </div>
+		  <button type="submit" class="btn btn-success" style="margin-top:20px; margin-left:5px;">Submit</button>
+         </form>
+		 <div style="font-size:20px; color:black; margin-left:30px; margin-top:10px; font-family:cormorant garamond;"><a href="#" style="color:blue;">Change Password</a><br></div>
+		 
+		 
+<!--CHANGE PASSWORD-->
+          <form name='myForm' action='' onsubmit=''  method='post' style='margin-top:20px; width:500px; margin-left:30px;'>
+	      <div class='form-group'>
+          <label for='old_password'>Old Password:</label>
+          <input name ='old_password' type='password' class='form-control' placeholder='Enter old password' required>
+          </div>
+		  <div class='form-group'>
+          <label for='new_password'>New Password:</label>
+          <input name ='new_password' type='password' class='form-control' placeholder='Enter new password' required>
+          </div>
+		  <div class='form-group'>
+          <label for='cnfrm_password'>Confirm Password:</label>
+          <input name ='cnfrm_password' type='password' class='form-control' placeholder='Enter new password' required>
+          </div>
+		  <button type='submit' class='btn btn-success' style='margin-top:20px; margin-left:5px;'>Change Password</button>
+         </form>
+		 
+
+<!--ADD EVENT-->
+         <div style='font-size:40px; color:black; margin-left:30px; font-family:cormorant garamond;'>Event info<br></div>
+		 <form name='myForm' action='' onsubmit=''  method='post' style='margin-top:70px; width:500px; margin-left:30px;'>
+	      <div class='form-group'>
+          <label for='e_id'>Event ID:</label>
+          <input name ='e_id' type='text' class='form-control' placeholder='Enter event id' required>
+          </div>
+		  <div class='form-group'>
+          <label for='e_name'>Event Name:</label>
+          <input name ='e_name' type='text' class='form-control' placeholder='Enter event name' required>
+          </div>
+		  <div class='form-group'>
+          <label for='e_desc'>Event Description:</label>
+          <textarea name ='e_desc'  class='form-control' placeholder='Enter description'></textarea>
+          </div>
+		  <div class='form-group'>
+          <label for='e_startdate'>Event Starts On:</label>
+          <input name ='e_startdate' type='date' class='form-control' required>
+          </div>
+		  <div class='form-group'>
+          <label for='e_enddate'>Event Ends On:</label>
+          <input name ='e_enddate' type='date' class='form-control'required>
+          </div>
+		   <div class='form-group'>
+          <label for='e_starttime'>Event Starts At:</label>
+          <input name ='e_starttime' type='time' class='form-control' required>
+          </div>
+		  <div class='form-group'>
+          <label for='e_endtime'>Event Ends At:</label>
+          <input name ='e_endtime' type='date' class='form-control'required>
+          </div>
+		  <div class='form-group'>
+          <label for='e_venue'>Event Venue:</label>
+          <input name ='e_venue' type='text' class='form-control' placeholder='Enter venue' required>
+          </div>
+		  <div class='form-group'>
+          <label for='e_link'>Event Registration Link:</label>
+          <input name ='e_link' type='text' class='form-control' placeholder='Enter registration link' required>
+          </div>
+		  <button type='submit' class='btn btn-success' style='margin-top:20px; margin-left:5px;'>Submit</button>
+		  </form>
+	
+		  <!--ALL EVENT-->
+
+	  <div style='font-size:40px; color:black; margin-left:25px; font-family:cormorant garamond;'>List of events<br></div>
+	 <table class='table table-hover table-bordered table-info' style='margin-left:25px; margin-top:70px; width:60%;'>
+     <thead style='font-size:20px;'>
+      <tr>
+        <th>Name</th>
+		<th>Date</th>
+		<th>Time</th>
+		<th>Venue</th>
+    </thead>
+    <tbody>
+        <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+		<td></td>
+      </tr>
+	 </tbody>
+	  </table>

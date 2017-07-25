@@ -1,0 +1,11 @@
+.box
+{height:550px;
+width:50%;
+background-color:#13232f;
+margin:100px 25% ;
+position:relative;
+}
+
+ input:focus {
+    color:white ;
+}
